@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f9f9f9;
+            color: #222;
+        }
+        nav {
+            background: #2c3e50;
+            padding: 0.5em 1em;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        nav li {
+            margin: 0 1em;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5em 0;
+            display: block;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #f39c12;
+        }
+        section {
+            max-width: 900px;
+            margin: 2em auto;
+            background: #fff;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        h2 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1em;
+        }
+        .gallery-item {
+            background: #ecf0f1;
+            padding: 1em;
+            border-radius: 6px;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+        input, textarea {
+            padding: 0.7em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button {
+            background: #2c3e50;
+            color: #fff;
+            border: none;
+            padding: 0.8em;
+            border-radius: 4px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        button:hover {
+            background: #f39c12;
+        }
+        @media (max-width: 600px) {
+            section {
+                padding: 1em;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav li {
+                margin: 0.5em 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Project Gallery</a></li>
+            <li><a href="#contact">Contact Form</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Welcome! I'm a passionate developer with experience in building responsive and user-friendly web applications. I enjoy solving problems and learning new technologies.
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>Project Gallery</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <h3>Project One</h3>
+                <p>Short description of the project.</p>
+            </div>
+            <div class="gallery-item">
+                <h3>Project Two</h3>
+                <p>Short description of the project.</p>
+            </div>
+            <div class="gallery-item">
+                <h3>Project Three</h3>
+                <p>Short description of the project.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Form</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</body>
+</html>
