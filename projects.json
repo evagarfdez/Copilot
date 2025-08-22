@@ -1,3 +1,34 @@
+{
+    "description": "This component renders a user profile card displaying the user's avatar, name, and bio. It accepts user data as props and provides a button to follow or unfollow the user.",
+    "props": {
+        "user": {
+            "type": "object",
+            "description": "An object containing user information.",
+            "properties": {
+                "avatarUrl": {
+                    "type": "string",
+                    "description": "URL of the user's avatar image."
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Full name of the user."
+                },
+                "bio": {
+                    "type": "string",
+                    "description": "Short biography or description of the user."
+                },
+                "isFollowing": {
+                    "type": "boolean",
+                    "description": "Indicates whether the current user is following this user."
+                }
+            }
+        },
+        "onFollowToggle": {
+            "type": "function",
+            "description": "Callback function invoked when the follow/unfollow button is clicked."
+        }
+    }
+}
 [
     {
         "title": "My Portfolio",

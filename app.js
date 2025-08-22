@@ -1,3 +1,53 @@
+/**
+ * App is the main React component for a personal portfolio website.
+ * It includes a navigation bar, an about section, a project gallery, and a contact form.
+ *
+ * @component
+ *
+ * @returns {JSX.Element} The rendered portfolio web application.
+ */
+
+/**
+ * Navbar component renders the top navigation bar with links to different sections.
+ *
+ * @component
+ * @returns {JSX.Element} The navigation bar.
+ */
+
+/**
+ * AboutMe component displays a brief introduction about the developer.
+ *
+ * @component
+ * @returns {JSX.Element} The about me section.
+ */
+
+/**
+ * ProjectGallery component showcases a list of example projects in a responsive grid.
+ *
+ * @component
+ * @returns {JSX.Element} The project gallery section.
+ */
+
+/**
+ * ContactForm component renders a simple contact form for users to send messages.
+ *
+ * @component
+ * @returns {JSX.Element} The contact form section.
+ */
+
+ /**
+    * styles is an object containing inline style definitions for various components.
+    *
+    * @typedef {Object} styles
+    * @property {Object} nav - Styles for the navigation bar.
+    * @property {Object} navLinks - Styles for the navigation links.
+    * @property {Object} section - Styles for each section.
+    * @property {Object} gallery - Styles for the project gallery grid.
+    * @property {Object} card - Styles for individual project cards.
+    * @property {Object} form - Styles for the contact form.
+    * @property {Object} input - Styles for form input fields.
+    * @property {Object} button - Styles for form buttons.
+    */
 import React from "react";
 
 const styles = {
@@ -134,7 +184,7 @@ function ContactForm() {
     );
 }
 
-export default function PortfolioWebApplication() {
+export default function app() {
     return (
         <div>
             <Navbar />
